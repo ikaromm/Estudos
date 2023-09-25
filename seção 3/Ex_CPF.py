@@ -14,7 +14,6 @@ while True:
             break
         continue
         
-
     lista_cpf = []
     lista_cpf_multiplicada = []
     lista_cpf_multiplicada2 = []
