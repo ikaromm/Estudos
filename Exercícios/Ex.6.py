@@ -11,6 +11,19 @@ Requisitos:
         [1, 4, 9, 8, ->9<-, 4, 8] (retorne 9)
     Se não encontrar duplicados na lista, retorne -1
 """
+
+def duplicacao(ind_lista):
+    emp_list = []
+    j=0
+    for n in lista_de_listas_de_inteiros[ind_lista]:
+        if lista_de_listas_de_inteiros[ind_lista][j] in emp_list:
+            print(f'O valor duplicado é {lista_de_listas_de_inteiros[ind_lista][j]}')
+            break
+        emp_list.append(lista_de_listas_de_inteiros[ind_lista][j])
+        j += 1 
+    else:
+        print(f'Não existem valores duplicados')
+
 lista_de_listas_de_inteiros = [
     [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
     [9, 1, 8, 9, 9, 7, 2, 1, 6, 8],
@@ -25,3 +38,31 @@ lista_de_listas_de_inteiros = [
     [5, 3, 1, 8, 5, 7, 1, 8, 8, 7],
     [10, 9, 8, 7, 6, 5, 4, 3, 2, 1],
 ]
+
+
+ind_lista = int(input('digite a lista a ser buscada: '))
+duplicacao(ind_lista)
+
+#--------------------------------------------------------
+#Solução curso: 
+
+
+# def encontra_primeiro_duplicado(lista_de_inteiros):
+#     numeros_checados = set()
+#     primeiro_duplicado = -1
+
+#     for numero in lista_de_inteiros:
+#         if numero in numeros_checados:
+#             primeiro_duplicado = numero
+#             break
+
+#         numeros_checados.add(numero)
+
+#     return primeiro_duplicado
+
+
+# for lista in lista_de_listas_de_inteiros:
+#     print(
+#         lista,
+#         encontra_primeiro_duplicado(lista)
+#     )
