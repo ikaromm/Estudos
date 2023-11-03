@@ -17,23 +17,23 @@
 # combinations_result = list(combinations(A, 2))
 # print(combinations_result)
 
-#----------------------------------------------------------------------------
+# ----------------------------------------------------------------------------
 from itertools import combinations_with_replacement, combinations
 
-nome_e_qntd = input('')
+nome_e_qntd = input("")
 
 input_parts = nome_e_qntd.split()
 
-nome = input_parts[0] 
-numero = input_parts[1] 
+nome = input_parts[0]
+numero = input_parts[1]
 
 nome_maiusculo = nome.upper()
 numero_inteiro = int(numero)
 
-lista = list(combinations_with_replacement(nome_maiusculo,numero_inteiro))
+lista = list(combinations_with_replacement(nome_maiusculo, numero_inteiro))
 
 sorted_lista = sorted(lista)
 
 for name in sorted_lista:
-    name_1 = ''.join(name)
+    name_1 = "".join(name)
     print(name_1)

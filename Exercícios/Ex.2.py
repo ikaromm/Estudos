@@ -7,13 +7,15 @@
 tabela_num = []
 cte = 0
 
+
 def mult(*args):
     total_mult = 1
     for numero in args:
         total_mult *= numero
-    return total_mult     
+    return total_mult
 
-numeros = input('Escreva os números com um espaço de diferença ')
+
+numeros = input("Escreva os números com um espaço de diferença ")
 
 numeros_split = numeros.split()
 
@@ -21,6 +23,3 @@ for rank in numeros_split:
     tabela_num.append(int(rank))
 
 print(mult(*tabela_num))
-
-
-

@@ -2,10 +2,13 @@
 # Crie funções que duplicam, triplicam e quadruplicam
 # o número recebido como parâmetro.
 
-def mult(x,y):
+
+def mult(x, y):
     return x * y
+
+
 tabela = []
-numeros = input('Digite a quatidade de vezes a ser multiplicado e o número: ')
+numeros = input("Digite a quatidade de vezes a ser multiplicado e o número: ")
 
 numeros_split = numeros.split()
 
